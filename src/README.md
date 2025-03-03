@@ -640,4 +640,100 @@ git-copy        https://github.com/Hir2wa/TGxAUCA-BASIC_EXERCISE_COPY.git (push)
 origin  https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git (fetch)
 origin  https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git (push)
 (base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES>
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add src/
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "Updated README.md"
+[main 9e1382b] Updated README.md
+ 1 file changed, 14 insertions(+)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 500 bytes | 500.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+   f8f8d48..9e1382b  main -> main
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push git-copy main
+Enumerating objects: 68, done.
+Counting objects: 100% (68/68), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (59/59), done.
+Writing objects: 100% (68/68), 14.93 KiB | 849.00 KiB/s, done.
+Total 68 (delta 24), reused 21 (delta 5), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (24/24), done.
+To https://github.com/Hir2wa/TGxAUCA-BASIC_EXERCISE_COPY.git
+ * [new branch]      main -> main
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add src/
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "added footer and updated README.md"
+[ft/footer 5834787] added footer and updated README.md
+ 2 files changed, 30 insertions(+)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add src/
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "updated index.html bu adding p"
+[ft/footer c5ad151] updated index.html bu adding p
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin ft/footer
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.14 KiB | 585.00 KiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/footer
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/footer -> ft/footer
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES>
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git merge --squash ft/footer
+Updating 9e1382b..c5ad151
+Fast-forward
+Squash commit -- not updating HEAD
+ src/README.md  | 26 ++++++++++++++++++++++++++
+ src/index.html |  4 ++++
+ 2 files changed, 30 insertions(+)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "footer changes squashing"
+[ft/squashing f7a3b4b] footer changes squashing
+ 2 files changed, 30 insertions(+)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin ft/squashing
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 868 bytes | 868.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/squashing
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/squashing -> ft/squashing
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES>
 ```
+
+## Bundle5:
+
+### Ex1:
