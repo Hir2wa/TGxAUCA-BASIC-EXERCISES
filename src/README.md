@@ -640,4 +640,30 @@ git-copy        https://github.com/Hir2wa/TGxAUCA-BASIC_EXERCISE_COPY.git (push)
 origin  https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git (fetch)
 origin  https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git (push)
 (base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES>
+
+
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add src/
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "Updated README.md"
+[main 9e1382b] Updated README.md
+ 1 file changed, 14 insertions(+)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 500 bytes | 500.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+   f8f8d48..9e1382b  main -> main
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push git-copy main
+Enumerating objects: 68, done.
+Counting objects: 100% (68/68), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (59/59), done.
+Writing objects: 100% (68/68), 14.93 KiB | 849.00 KiB/s, done.
+Total 68 (delta 24), reused 21 (delta 5), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (24/24), done.
+To https://github.com/Hir2wa/TGxAUCA-BASIC_EXERCISE_COPY.git
+ * [new branch]      main -> main
 ```
