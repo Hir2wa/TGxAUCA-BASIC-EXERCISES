@@ -627,3 +627,17 @@ Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
 
 
 ```
+
+## Bundle 4:
+
+### Ex 2:
+
+```bash
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git remote add git-copy https://github.com/Hir2wa/TGxAUCA-BASIC_EXERCISE_COPY.git
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git remote -v
+git-copy        https://github.com/Hir2wa/TGxAUCA-BASIC_EXERCISE_COPY.git (fetch)
+git-copy        https://github.com/Hir2wa/TGxAUCA-BASIC_EXERCISE_COPY.git (push)
+origin  https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git (fetch)
+origin  https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git (push)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES>
+```
