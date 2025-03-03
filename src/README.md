@@ -531,8 +531,98 @@ M       src/README.md
 Switched to branch 'main'
 Your branch is ahead of 'origin/main' by 1 commit.
   (use "git push" to publish your local commits)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git  add src/
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "Updated main branch with new changes"
+[main df60250] Updated main branch with new changes
+ 1 file changed, 253 insertions(+)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.02 KiB | 413.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+   de35ff6..df60250  main -> main
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git rebase main
+warning: skipped previously applied commit fa4a782
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config advice.skippedCherryPicks false"
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add .
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git rebase --continue
+fatal: no rebase in progress
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add .
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "Redesigned  contact  page"
+[ft/home-page-redesign 3cc1331] Redesigned  contact  page
+ 2 files changed, 18 insertions(+)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin ft/home-page-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 717 bytes | 239.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/home-page-redesign
+remote:
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/home-page-redesign
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
 (base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES>
-
 
 
 
