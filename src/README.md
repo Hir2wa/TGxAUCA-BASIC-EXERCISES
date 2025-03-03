@@ -284,3 +284,256 @@ Fast-forward
 
 
 ```
+
+## Bundle 3
+
+### Ex 1
+
+```bash
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git branch
+  dev
+  ft/bundle-2
+  ft/service-redesign
+* main
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add team.html
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "Add team page with team members"
+[ft/team-page cc7dc30] Add team page with team members
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 team.html
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/team-page
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/team-page -> ft/team-page
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git branch
+  dev
+  ft/bundle-2
+  ft/service-redesign
+  ft/team-page
+* main
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git log --oneline
+cc7dc30 (HEAD -> ft/team-page, origin/ft/team-page) Add team page with team members
+bf5f679 (main, ft/contact-page) updated README.md for  Bundle2
+76b23ee Merge pull request #2 from Hir2wa/ft/service-redesign
+8e935c6 (origin/ft/service-redesign, ft/service-redesign) Updated service.html with redesign changes
+a879bd8 Merge branch 'main' of https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES
+e3579e8 updated README.md
+eff892f Updated README.md
+bc515c0 Merge pull request #1 from Hir2wa/ft/bundle-2
+a99707f (origin/ft/bundle-2, ft/bundle-2) Added services.html page
+7da3bf1 Updated README.md
+ef43277 Initial commit with project setup
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git cherry-pick cc7dc30
+[ft/contact-page c9c5733] Add team page with team members
+ Date: Mon Mar 3 12:47:26 2025 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 team.html
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add contact.html
+fatal: pathspec 'contact.html' did not match any files
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git add contact.html
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "Add contact page"
+[ft/contact-page 37d7698] Add contact page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 contact.html
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin ft/contact-page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 548 bytes | 78.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/contact-page
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git branch
+  dev
+  ft/bundle-2
+* ft/contact-page
+  ft/service-redesign
+  ft/team-page
+Revert "Add team page with team members"
+Revert "Add team page with team members"
+Revert "Add team page with team members"
+This reverts commit cc7dc309680fd467cf10e9f8965e6417c00d3bc1.
+  main
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "Add FAQ page"
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git  add .
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git commit -m "Add FAQ page"
+[ft/faq-page 762f2da] Add FAQ page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 faq.html
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 236 bytes | 236.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/faq-page
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 236 bytes | 236.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/faq-page
+remote:
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 236 bytes | 236.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/faq-page
+remote:
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 236 bytes | 236.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/faq-page
+remote:
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/faq-page
+remote:
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/faq-page
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES/pull/new/ft/faq-page
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git revert cc7dc30
+[ft/faq-page fa4a782] This reverts commit cc7dc309680fd467cf10e9f8965e6417c00d3bc1.
+remote:
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git revert cc7dc30
+[ft/faq-page fa4a782] This reverts commit cc7dc309680fd467cf10e9f8965e6417c00d3bc1.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git revert cc7dc30
+[ft/faq-page fa4a782] This reverts commit cc7dc309680fd467cf10e9f8965e6417c00d3bc1.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git revert cc7dc30
+[ft/faq-page fa4a782] This reverts commit cc7dc309680fd467cf10e9f8965e6417c00d3bc1.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 team.html
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+ delete mode 100644 team.html
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+   762f2da..fa4a782  ft/faq-page -> ft/faq-page
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES.git
+   762f2da..fa4a782  ft/faq-page -> ft/faq-page
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git  switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
+Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git pull origin main
+From https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES
+ * branch            main       -> FETCH_HEAD
+Updating bf5f679..de35ff6
+Fast-forward
+ contact.html | 0
+ team.html    | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 contact.html
+ create mode 100644 team.html
+```
+
+### Ex 2:
+
+```bash
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+* ft/faq-page
+  ft/service-redesign
+  ft/team-page
+  main
+  r
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git switch main
+M       src/README.md
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+(base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES>
+
+
+
+
+```
