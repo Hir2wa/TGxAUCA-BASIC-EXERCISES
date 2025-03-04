@@ -737,3 +737,33 @@ Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
 ## Bundle5:
 
 ### Ex1:
+
+```bash
+https://hir2wa.github.io/TGxAUCA-BASIC-EXERCISES/
+```
+
+### Ex2:
+
+```bash
+(base) PS C:\Users\Aime\git-cafe-exercise> git add .
+(base) PS C:\Users\Aime\git-cafe-exercise> git commit -m "Updated welcome message to 'Welcome to our restaurant'"
+[main 0d27f49] Updated welcome message to 'Welcome to our restaurant'
+ 1 file changed, 400 insertions(+), 239 deletions(-)
+(base) PS C:\Users\Aime\git-cafe-exercise> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.59 KiB | 1.59 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Hir2wa/git-cafe-exercise.git
+   d1d3f9c..0d27f49  main -> main
+(base) PS C:\Users\Aime\git-cafe-exercise>
+
+//created  pull request  waiting for  the owner of the site  to approval it !!!
+```
+
+## Bundle6:
+
+### Ex2:
