@@ -766,4 +766,97 @@ To https://github.com/Hir2wa/git-cafe-exercise.git
 
 ## Bundle6:
 
+### Ex1:
+
+```bash
+(base) PS C:\Users\Aime\git-cafe-exercise> git branch
+* main
+(base) PS C:\Users\Aime\git-cafe-exercise> git checkout -b ft/menu-page
+Switched to a new branch 'ft/menu-page'
+(base) PS C:\Users\Aime\git-cafe-exercise> git add .
+(base) PS C:\Users\Aime\git-cafe-exercise> git commit -m "Add Menu page"
+[ft/menu-page 2205838] Add Menu page
+ 1 file changed, 76 insertions(+)
+ create mode 100644 menu.html
+(base) PS C:\Users\Aime\git-cafe-exercise> git push origin ft/menu-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.09 KiB | 1.09 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/menu-page' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/git-cafe-exercise/pull/new/ft/menu-page
+remote:
+To https://github.com/Hir2wa/git-cafe-exercise.git
+ * [new branch]      ft/menu-page -> ft/menu-page
+(base) PS C:\Users\Aime\git-cafe-exercise>
+(base) PS C:\Users\Aime\git-cafe-exercise>
+```
+
 ### Ex2:
+
+```bash
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS C:\Users\Aime\git-cafe-exercise> git checkout -b bugfix/change-title-contact
+Switched to a new branch 'bugfix/change-title-contact'
+(base) PS C:\Users\Aime\git-cafe-exercise> git add index-4.html  # Stage the changes
+(base) PS C:\Users\Aime\git-cafe-exercise> git commit -m "Bug fix: Change title of index-4.html to 'Contact'"  # Commit the changes
+[bugfix/change-title-contact 82ddad6] Bug fix: Change title of index-4.html to 'Contact'
+ 1 file changed, 232 insertions(+), 164 deletions(-)
+(base) PS C:\Users\Aime\git-cafe-exercise>  ^C
+(base) PS C:\Users\Aime\git-cafe-exercise> git push origin bugfix/change-title-contact
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.44 KiB | 1.44 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bugfix/change-title-contact' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/git-cafe-exercise/pull/new/bugfix/change-title-contact
+remote:
+To https://github.com/Hir2wa/git-cafe-exercise.git
+ * [new branch]      bugfix/change-title-contact -> bugfix/change-title-contact
+(base) PS C:\Users\Aime\git-cafe-exercise>
+
+```
+
+### Ex3:
+
+```bash
+(base) PS C:\Users\Aime\git-cafe-exercise> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS C:\Users\Aime\git-cafe-exercise> git checkout -b hotfix/contact-phone-number
+Switched to a new branch 'hotfix/contact-phone-number'
+(base) PS C:\Users\Aime\git-cafe-exercise> git add index-4.html
+(base) PS C:\Users\Aime\git-cafe-exercise> git commit -m "Hotfix: Update telephone number to +1 800 659 6035"
+[hotfix/contact-phone-number ab51685] Hotfix: Update telephone number to +1 800 659 6035
+ 1 file changed, 231 insertions(+), 163 deletions(-)
+(base) PS C:\Users\Aime\git-cafe-exercise> git push origin hotfix/contact-phone-number
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.42 KiB | 1.42 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'hotfix/contact-phone-number' on GitHub by visiting:
+remote:      https://github.com/Hir2wa/git-cafe-exercise/pull/new/hotfix/contact-phone-number
+remote:
+To https://github.com/Hir2wa/git-cafe-exercise.git
+ * [new branch]      hotfix/contact-phone-number -> hotfix/contact-phone-number
+(base) PS C:\Users\Aime\git-cafe-exercise>
+```
+
+###Ex2:
+
+```txt
+ This exercise is for reviewing my peer's pull request requests.
+```
