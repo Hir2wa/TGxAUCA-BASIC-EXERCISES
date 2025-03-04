@@ -333,12 +333,12 @@ Switched to branch 'ft/team-page'
 (base) PS C:\Users\Aime\TGxAUCA-BASIC-EXERCISES> git log --oneline
 cc7dc30 (HEAD -> ft/team-page, origin/ft/team-page) Add team page with team members
 bf5f679 (main, ft/contact-page) updated README.md for  Bundle2
-76b23ee Merge pull request #2 from Hir2wa/ft/service-redesign
+76b23ee Merge pull request
 8e935c6 (origin/ft/service-redesign, ft/service-redesign) Updated service.html with redesign changes
 a879bd8 Merge branch 'main' of https://github.com/Hir2wa/TGxAUCA-BASIC-EXERCISES
 e3579e8 updated README.md
 eff892f Updated README.md
-bc515c0 Merge pull request #1 from Hir2wa/ft/bundle-2
+bc515c0 Merge pull request
 a99707f (origin/ft/bundle-2, ft/bundle-2) Added services.html page
 7da3bf1 Updated README.md
 ef43277 Initial commit with project setup
@@ -803,8 +803,8 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 (base) PS C:\Users\Aime\git-cafe-exercise> git checkout -b bugfix/change-title-contact
 Switched to a new branch 'bugfix/change-title-contact'
-(base) PS C:\Users\Aime\git-cafe-exercise> git add index-4.html  # Stage the changes
-(base) PS C:\Users\Aime\git-cafe-exercise> git commit -m "Bug fix: Change title of index-4.html to 'Contact'"  # Commit the changes
+(base) PS C:\Users\Aime\git-cafe-exercise> git add index-4.html
+(base) PS C:\Users\Aime\git-cafe-exercise> git commit -m "Bug fix: Change title of index-4.html to 'Contact'"
 [bugfix/change-title-contact 82ddad6] Bug fix: Change title of index-4.html to 'Contact'
  1 file changed, 232 insertions(+), 164 deletions(-)
 (base) PS C:\Users\Aime\git-cafe-exercise>  ^C
